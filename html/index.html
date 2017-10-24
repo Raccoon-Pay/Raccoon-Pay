@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Raccoon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/164ef8ddf8.js"></script>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+
+<body>
+    <div id="main">
+        <p id="phone-label">PHONE NUMBER</p>
+        <form action="http://raccoonpay.me:8000" method="POST">
+            <div id="phone-entry">
+                <input name="From" placeholder="(333) 444-5555">
+                <button class="submit submit-disabled" type="submit" disabled="disabled">
+                    <img src="static/imgs/continue.svg">
+                </button>
+            </div>
+        </form>
+        <p id="about">About</p>
+        <a href="http://raccoonpay.me">
+            <img id="logo" src="static/imgs/logo.png">
+        </a>
+    </div>
+    <div class="cover" id="cover"></div>
+    <div class="popup" id="popup">
+        <p>Raccoon is a SMS based app that helps you easily figure out how much money you need to collect or pay during an event
+            when you or other friends are making payments for everyone.</p>
+        <p>To get started, enter your number here or send "new" to (949) 835-5182, and a group will be made for you and other
+            friends to join. When a member is making a payment for everyone, this member could simply text the amount of
+            payment to us and thus the transaction will be tracked. At the end of the event, by triggering a check-out request
+            calculations will be done by our system and each of group members will receive a final bill including how much
+            this person needs to pay to each of other members.</p>
+        <p>Going dutch is made easy with Raccoon. We hope you enjoy our service!</p>
+    </div>
+    <script src="https://use.typekit.net/iwb0frs.js"></script>
+    <script src="static/js/main.js"></script>
+</body>

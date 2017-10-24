@@ -1,0 +1,146 @@
+* {
+    -webkit-appearance: none;
+}
+input {
+    outline: none;
+}
+body {
+    background-color: #241B1E;
+}
+#main {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    right: 0;
+    margin: 30vh auto 0 auto;
+}
+#phone-label {
+    color: #fff;
+    font-family: "skolar-sans-latin-extended", sans-serif;
+}
+#phone-entry {
+    position: relative;
+    background-color: #fff;
+    height: 80px;
+    width: 400px;
+    border-radius: 2px;
+}
+#phone-entry input {
+    margin: 0;
+    position: absolute;
+    width: calc(100% - 80px);
+    line-height: 40px;
+    border: none;
+    padding: 20px 0 20px 20px;
+    font-size: 16pt;
+    font-family: 'alwyn-new-web', sans-serif;
+}
+#phone-entry img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    pointer-events: none;
+}
+.submit {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(36, 27, 30);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.submit:hover {
+    transform: scale(1.1);
+}
+.submit-disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+.submit-disabled:hover {
+    transform: scale(1);
+}
+#about {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    font-family: 'myriad-pro', sans-serif;
+    text-decoration: underline;
+    margin: 10vh auto 0 auto;
+    transition: all 0.2s ease;
+}
+#about:hover {
+    color: rgba(255, 255, 255, 1);
+}
+#logo {
+    position: absolute;
+    width: 100px;
+    margin: 10vh auto 0 auto;
+    left: 0;
+    right: 0;
+}
+.cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+.cover-opened {
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: auto;
+}
+.popup {
+    position: absolute;
+    max-width: 640px;
+    margin: auto;
+    padding: 16px;
+    font-family: 'myriad-pro', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    height: 240px;
+    left: 10%;
+    right: 10%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    transform: scaleY(0);
+    opacity: 0;
+    overflow-y: scroll;
+}
+.popup-opened {
+    transform: scaleY(1);
+    opacity: 1;
+}
+@media (max-width: 800px) {
+    .popup {
+        height: 320px;
+        max-height: 50%;
+    }
+}
+@media (max-width: 560px) {
+    .popup {
+        height: 500px;
+        max-height: 80%;
+    }
+}
+@media (max-width: 420px) {
+    #main {
+        margin: 20vh auto 0 auto;
+        width: calc(100% - 40px);
+    }
+    #phone-entry {
+        width: 100%;
+    }
+}

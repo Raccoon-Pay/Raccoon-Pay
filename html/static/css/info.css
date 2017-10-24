@@ -1,0 +1,42 @@
+* {
+    -webkit-appearance: none;
+}
+input {
+    outline: none;
+}
+body {
+    background-color: #241B1E;
+}
+#main {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    right: 0;
+    margin: 30vh auto 0 auto;
+}
+#group-label {
+    color: #fff;
+    font-family: "skolar-sans-latin-extended", sans-serif;
+}
+#group-number {
+    color: #fff;
+    font-family: 'alwyn-new-web', sans-serif;
+    font-size: 48pt;
+    margin: 0;
+}
+#group-intro {
+    color: #fff;
+    font-family: 'myriad-pro', sans-serif;
+}
+#logo {
+    position: absolute;
+    width: 100px;
+    margin: 10vh auto 0 auto;
+    left: 0;
+    right: 0;
+}
+@media (max-width: 420px) {
+    #main {
+        width: calc(100% - 40px);
+    }
+}
