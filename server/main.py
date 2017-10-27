@@ -90,7 +90,7 @@ def determineMessage(receivedMessage: str, phoneNum: str):
         send_sms(messageToSend, phoneNum)
         return groupNum
     elif (typeisint(receivedMessage) and len(receivedMessage) == 6):
-        if DataBase.AddMember(phoneNum, int(receivedMessage)):
+        if DataBase.AddMember(phoneNum, receivedMessage):
             messageToSend = 'You have successfully entered the group ' + str(receivedMessage) + '. To request money from this group, simply reply the amount of it.'
         else:
             messageToSend = 'Sorry, the group code you entered ({}) is invalid.'.format(receivedMessage)
